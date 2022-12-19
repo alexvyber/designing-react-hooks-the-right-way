@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+  </head>
+  <style>
+    h1 {
+      color: red;
+    }
+  </style>
+  <script>
+    console.log("start...")
+  </script>
+  <body>
+    <h1>Hello World</h1>
+    <div id="root"></div>
+
+    <script>
+      const App = el => el.append("Another Text")
+
+      const root = document.getElementById("root")
+      let div = document.createElement("div")
+      div.append("Some Text ", "More text ", "AS much as you need ")
+      div.append("Another Text ")
+
+      root.append(div)
+      // root.append(App(div))
+    </script>
+  </body>
+</html>
